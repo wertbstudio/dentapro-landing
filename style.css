@@ -526,10 +526,12 @@ a:focus-visible,button:focus-visible,input:focus-visible {
 
 .brand small {
   display:block;
-  font-size:7px;
-  letter-spacing:.14em;
-  font-weight:550;
-  margin-top:6px
+  font-size:8px;
+  line-height:1.2;
+  letter-spacing:.04em;
+  font-weight:600;
+  white-space:nowrap;
+  margin-top:2px
 }
 
 .header-address,.header-phone,.callback,.header-nav {
