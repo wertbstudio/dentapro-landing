@@ -490,6 +490,10 @@ a:focus-visible,button:focus-visible,input:focus-visible {
   height:80px
 }
 
+.header-contact {
+  display:contents;
+}
+
 .brand {
   display:inline-flex;
   align-items:center;
@@ -1708,10 +1712,35 @@ form>input[aria-invalid=true] {
     padding:90px 0
   }
   .header-main {
-    height:86px
+    display:grid;
+    grid-template-columns:minmax(0, 1fr) auto minmax(0, 1fr);
+    height:86px;
+  }
+  .header-main > .brand {
+    grid-column:2;
+    grid-row:1;
+    justify-self:center;
+  }
+  .header-contact {
+    display:flex;
+    grid-column:3;
+    grid-row:1;
+    align-items:center;
+    justify-content:flex-end;
+    gap:14px;
+  }
+  .header-main .header-phone {
+    margin-left:0;
+    white-space:nowrap;
+  }
+  .header-main .header-phone > a {
+    font-size:16px;
   }
   .header-address {
-    display:flex
+    display:flex;
+    grid-column:1;
+    grid-row:1;
+    justify-self:start;
   }
   .callback {
     display:inline-flex;
@@ -1930,12 +1959,14 @@ form>input[aria-invalid=true] {
   .header-main {
     gap:35px
   }
-  .header-phone {
-    margin-left:auto
+  .header-contact {
+    gap:35px;
+  }
+  .header-main .header-phone > a {
+    font-size:18px;
   }
   .header-address {
     font-size:12px;
-    margin-left:70px
   }
   .hero-grid {
     gap:64px;
