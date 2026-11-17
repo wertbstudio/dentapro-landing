@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0D9488">
+  <meta name="description" content="ДентаПро — стоматология в Москве. Лечение под микроскопом, имплантация и эстетика улыбки. Прозрачный план лечения и запись на осмотр.">
+  <title>ДентаПро — забота о вашей улыбке</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%230D9488'/%3E%3Cpath d='M18 17c7-5 10 0 14 0s7-5 14 0c8 8-1 32-6 32-4 0-2-14-8-14s-4 14-8 14c-5 0-14-24-6-32Z' fill='white'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;550;600;650;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <svg class="svg-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="tooth" viewBox="0 0 32 32"><path d="M8 5c4-2 5 0 8 0s4-2 8 0c6 5-1 23-5 23-3 0-1-10-3-10s0 10-3 10C9 28 2 10 8 5Z"/><path d="m12 8 4 1"/></symbol>
+    <symbol id="arrow" viewBox="0 0 24 24"><path d="M4 12h16m-6-6 6 6-6 6"/></symbol>
+    <symbol id="check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="shield" viewBox="0 0 24 24"><path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6l8-3Z"/><path d="m8 12 3 3 5-6"/></symbol>
+    <symbol id="scope" viewBox="0 0 24 24"><path d="m9 3 7 7-4 4-7-7 4-4Zm-2 6-2 2m9 1a6 6 0 0 1-2 11M4 21h16M7 16a5 5 0 0 0 5 5M16 7l2-2"/></symbol>
+    <symbol id="scan" viewBox="0 0 24 24"><path d="M8 3H4v4m12-4h4v4M4 17v4h4m12-4v4h-4M7 12h10M9 8h6v8H9z"/></symbol>
+    <symbol id="icon-phone" viewBox="0 0 24 24"><path d="m5 3 4 1 1 5-3 2a16 16 0 0 0 6 6l2-3 5 1 1 4c-2 6-19-3-18-12l2-4Z"/></symbol>
+    <symbol id="pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+  </svg>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+  <header class="header">
+    <div class="container header-main">
+      <a class="brand" href="#" aria-label="ДентаПро — на главную">
+        <span class="brand-mark"><svg><use href="#tooth"/></svg></span>
+        <span>Дента<span class="brand-accent">Про</span><small>СТОМАТОЛОГИЯ С ЗАБОТОЙ</small></span>
+      </a>
+      <div class="header-address"><svg class="icon"><use href="#pin"/></svg><span>г. Москва, ул. Ленина, 15<small>Ежедневно 09:00–21:00</small></span></div>
+      <div class="header-phone"><a href="tel:+79991234567">+7 (999) 123-45-67</a><small><i class="status-dot"></i> Сейчас можно записаться</small></div>
+      <button class="button button-outline callback" data-book="Обратный звонок">Заказать звонок</button>
+      <button class="menu-toggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span></button>
+    </div>
+    <div class="header-nav"><div class="container nav-line"><nav aria-label="Основная навигация"><a href="#services">Услуги и цены</a><a href="#doctors">Врачи</a><a href="#results">Работы До/После</a><a href="#reviews">Отзывы</a><a href="#contacts">Контакты</a></nav><span class="nav-note"><svg class="icon"><use href="#shield"/></svg> Открытость. Точность. Забота.</span></div></div>
+  </header>
+
+  <dialog id="mobile-menu" class="mobile-menu" aria-labelledby="menu-title">
+    <div class="mobile-menu-head"><strong id="menu-title">ДентаПро</strong><button class="icon-button" data-close-menu aria-label="Закрыть меню"><svg class="icon"><use href="#close"/></svg></button></div>
+    <nav aria-label="Мобильная навигация"><a href="#services">Услуги и цены <span>01</span></a><a href="#doctors">Врачи <span>02</span></a><a href="#results">Работы До/После <span>03</span></a><a href="#reviews">Отзывы <span>04</span></a><a href="#contacts">Контакты <span>05</span></a></nav>
+    <div class="mobile-menu-contact"><p>г. Москва, ул. Ленина, 15<br>Ежедневно 09:00–21:00</p><a href="tel:+79991234567">+7 (999) 123-45-67</a><button class="button button-primary" data-book="Обратный звонок">Заказать звонок</button></div>
+  </dialog>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="hero-badge"><span class="status-dot"></span><span>Лицензированная клиника</span><span class="badge-divider"></span><span class="badge-rating">★ 5.0 <span>на Яндекс.Картах</span></span></div>
+          <h1 id="hero-title">Лечение и имплантация зубов <span>без боли</span> с гарантией по договору</h1>
+          <p class="hero-description">Проводим точную 3D-диагностику за 15 минут. Используем современную компьютерную анестезию и европейские материалы.</p>
+          <div class="hero-actions"><a class="button button-primary" href="#quiz">Рассчитать стоимость <svg class="icon"><use href="#arrow"/></svg></a><button class="button button-soft" data-book="Первичный осмотр">Записаться на осмотр</button></div>
+          <p class="hero-reassurance"><svg class="icon"><use href="#check"/></svg> Сначала знакомимся. Затем выбираем лечение.</p>
+          <div class="benefits">
+            <div class="benefit"><svg class="icon"><use href="#shield"/></svg><span>Рассрочка 0%<small>без переплат</small></span></div>
+            <div class="benefit"><svg class="icon"><use href="#scope"/></svg><span>Лечение<small>под микроскопом</small></span></div>
+            <div class="benefit"><svg class="icon"><use href="#scan"/></svg><span>Собственный<small>3D-томограф</small></span></div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="image-label"><span class="status-dot"></span> Пространство, где спокойно</div>
+          <img class="clinic-image" src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" alt="Современный светлый стоматологический кабинет с оборудованием" width="1200" height="1400" fetchpriority="high">
+          <div class="photo-caption"><span>ДЕНТАПРО / МОСКВА</span></div>
+          <div class="rating-card"><div class="rating-card-top"><span class="avatar-stack"><span>А</span><span>М</span><span>Е</span></span><span class="stars" aria-label="5 из 5">★★★★★</span></div><p>Более <strong>4 500</strong> довольных пациентов</p><span>за 8 лет работы</span></div>
+          <svg class="image-spark" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 0C58 30 70 42 100 50C70 58 58 70 50 100C42 70 30 58 0 50C30 42 42 30 50 0Z" fill="currentColor"/></svg>
+        </div>
+      </div>
+    </section>
+
+    <div class="care-strip"><div class="container"><span>ЗДОРОВАЯ УЛЫБКА НАЧИНАЕТСЯ С ДОВЕРИЯ</span><p>Точная диагностика <i>✦</i> Бережное лечение <i>✦</i> Понятный план</p></div></div>
+
+    <section class="services section" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow"><span></span> УСЛУГИ И СТОИМОСТЬ</p><h2 id="services-title">Прозрачные цены<br>без скрытых доплат<span class="accent">.</span></h2></div><p>Фиксируем стоимость лечения в плане<br class="desktop-break"> до начала процедур. Вы всегда знаете,<br class="desktop-break"> за что платите.</p></div>
+        <div class="tabs" role="tablist" aria-label="Направления лечения">
+          <button id="tab-therapy" role="tab" aria-selected="true" aria-controls="panel-therapy" tabindex="0">Терапия и лечение</button>
+          <button id="tab-implants" role="tab" aria-selected="false" aria-controls="panel-implants" tabindex="-1">Имплантация</button>
+          <button id="tab-prosthetics" role="tab" aria-selected="false" aria-controls="panel-prosthetics" tabindex="-1">Ортопедия и виниры</button>
+          <button id="tab-hygiene" role="tab" aria-selected="false" aria-controls="panel-hygiene" tabindex="-1">Профгигиена и отбеливание</button>
+        </div>
+        <div class="service-panels" id="service-panels"></div>
+        <noscript><p>Для переключения услуг и онлайн-записи включите JavaScript. Записаться по телефону: <a href="tel:+79991234567">+7 (999) 123-45-67</a>.</p></noscript>
+        <div class="price-note"><span><svg class="icon"><use href="#shield"/></svg> Стоимость фиксируется в договоре</span><p>Указаны ориентировочные цены. Точный план — после осмотра.</p></div>
+      </div>
+    </section>
+
+    <section class="quiz-section section" id="quiz" aria-labelledby="quiz-title">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow"><span></span> ПЛАН ВАШЕЙ УЛЫБКИ</p><h2 id="quiz-title">Понятная стоимость.<br>Первый шаг — за вами<span class="accent">.</span></h2></div><p>Ответьте на три вопроса — подготовим<br class="desktop-break"> ориентировочный план и закрепим подарок.</p></div>
+        <div class="quiz-card">
+          <div class="quiz-main">
+            <div id="quiz-flow">
+              <div class="quiz-progress-label"><span id="quiz-step-label" aria-live="polite">Шаг 1 из 4</span><span>~ 1 минута</span></div>
+              <div class="quiz-progress" role="progressbar" aria-label="Прогресс расчёта" aria-valuemin="0" aria-valuemax="4" aria-valuenow="1"><span id="quiz-progress-fill"></span></div>
+              <div id="quiz-question-area"><h3 id="quiz-question" tabindex="-1"></h3><p class="quiz-hint">Выберите один вариант — перейдём к следующему вопросу.</p><fieldset class="quiz-options" id="quiz-options"><legend class="sr-only">Варианты ответа</legend></fieldset></div>
+              <div id="quiz-final" hidden>
+                <h3 id="quiz-final-title" tabindex="-1">Расчет готов!</h3>
+                <p class="quiz-final-copy">Оставьте номер телефона, чтобы получить ориентировочную смету и закрепить за собой бесплатный 3D-снимок.</p>
+                <p class="quiz-clarification">Смету подготовит координатор по вашим ответам. Точная стоимость и необходимость КТ определяются после осмотра.</p>
+                <form id="quiz-form" novalidate>
+                  <div class="quiz-fields"><div><label for="quiz-name">Ваше имя</label><input id="quiz-name" name="name" autocomplete="given-name" placeholder="Как к вам обращаться?" minlength="2" maxlength="70" required aria-describedby="quiz-name-error"><span id="quiz-name-error" class="field-error"></span></div><div><label for="quiz-phone">Телефон</label><input id="quiz-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7 (___) ___-__-__" maxlength="18" required aria-describedby="quiz-phone-error"><span id="quiz-phone-error" class="field-error"></span></div></div>
+                  <div class="honeypot" aria-hidden="true"><label for="quiz-website">Ваш сайт</label><input id="quiz-website" name="website" tabindex="-1" autocomplete="off"></div>
+                  <label class="consent"><input type="checkbox" id="quiz-consent" name="consent" required><span>Согласен на обработку контактов и ответов квиза, включая сведения о дискомфорте, для подготовки предложения и связи со мной согласно <button type="button" class="inline-link" data-privacy>политике конфиденциальности</button>.</span></label>
+                  <p class="form-error" id="quiz-error" role="alert"></p>
+                  <button type="submit" class="button button-primary">Получить расчет и подарок <svg class="icon" aria-hidden="true"><use href="#arrow"/></svg></button>
+                </form>
+              </div>
+              <div class="quiz-navigation"><button type="button" class="quiz-back text-button" id="quiz-back" disabled>← Назад</button><span id="quiz-navigation-note">Без звонков до отправки заявки</span><button type="button" class="button button-outline" id="quiz-next" disabled>Далее <svg class="icon" aria-hidden="true"><use href="#arrow"/></svg></button></div>
+            </div>
+            <div id="quiz-success" class="success-screen" hidden tabindex="-1" role="status"><span class="success-icon"><svg class="icon"><use href="#check"/></svg></span><p class="eyebrow">ЗАЯВКА ОТПРАВЛЕНА</p><h3>Спасибо! Подарок — за вами</h3><p>Мы получили ваши ответы. Администратор свяжется с вами в часы работы, обсудит ориентировочную смету и условия получения 3D-снимка.</p><span class="success-hours">Ежедневно 09:00–21:00</span><button type="button" class="button button-soft" id="quiz-restart">Пройти ещё раз</button></div>
+          </div>
+          <aside class="quiz-gift"><span class="gift-tag">ВАШ ПОДАРОК ЗА РАСЧЕТ</span><div class="gift-illustration" aria-hidden="true"><svg><use href="#scan"/></svg><span>3D</span></div><h3>3D-снимок КТ<br>и план лечения<br><span>бесплатно</span></h3><p>Первый шаг к понятному лечению — точная диагностика.</p><div class="gift-note"><svg class="icon" aria-hidden="true"><use href="#shield"/></svg><span>Условия подарка уточнит администратор. КТ — по назначению врача.</span></div></aside>
+        </div>
+        <noscript><p>Для прохождения квиза включите JavaScript или позвоните: +7 (999) 123-45-67.</p></noscript>
+      </div>
+    </section>
+
+    <section class="results-section section" id="results" aria-labelledby="results-title"><div class="container">
+      <div class="section-heading"><div><p class="eyebrow"><span></span> МАЛЕНЬКИЕ ДЕТАЛИ. БОЛЬШАЯ РАЗНИЦА.</p><h2 id="results-title">За каждой улыбкой —<br>своя история<span class="accent">.</span></h2></div><p>Потяните шторку, чтобы сравнить.<br class="desktop-break"> Бережно восстанавливаем эстетику и функцию.</p></div>
+      <p class="demo-note">Иллюстративные примеры: схемы показывают идею лечения, а не результаты реальных пациентов. Сроки и специалисты указаны для демонстрации.</p>
+      <div class="case-grid">
+        <article class="case-card"><div class="comparison" style="--position:50%"><img src="assets/restoration-after.svg" width="800" height="500" alt="Иллюстрация после реставрации: ровные края передних зубов" loading="lazy" draggable="false"><img class="comparison-before" src="assets/restoration-before.svg" width="800" height="500" alt="Иллюстрация до реставрации: скол и промежуток между зубами" loading="lazy" draggable="false"><span class="comparison-label label-before">До</span><span class="comparison-label label-after">После</span><div class="comparison-divider" aria-hidden="true"><span>‹ ›</span></div><input class="comparison-range" type="range" min="0" max="100" value="50" aria-label="Сравнение до и после реставрации" aria-valuetext="До 50%, после 50%"></div><div class="case-content"><span class="case-category">ЭСТЕТИЧЕСКАЯ СТОМАТОЛОГИЯ</span><h3>Эстетическая реставрация передних зубов</h3><p>Задача: восстановить сколотый край и гармоничные пропорции улыбки, сохранив естественный вид.</p><div class="case-meta"><span><svg class="icon"><use href="#clock"/></svg> 2 визита</span><span>Врач: Елена Морозова</span></div><button class="button button-outline" data-book="Результат: реставрация передних зубов">Хочу такой же результат <svg class="icon"><use href="#arrow"/></svg></button></div></article>
+        <article class="case-card"><div class="comparison" style="--position:50%"><img src="assets/implant-after.svg" width="800" height="500" alt="Иллюстрация после протезирования: восстановленный зубной ряд" loading="lazy" draggable="false"><img class="comparison-before" src="assets/implant-before.svg" width="800" height="500" alt="Иллюстрация до имплантации: отсутствующий боковой зуб" loading="lazy" draggable="false"><span class="comparison-label label-before">До</span><span class="comparison-label label-after">После</span><div class="comparison-divider" aria-hidden="true"><span>‹ ›</span></div><input class="comparison-range" type="range" min="0" max="100" value="50" aria-label="Сравнение до и после имплантации" aria-valuetext="До 50%, после 50%"></div><div class="case-content"><span class="case-category">ИМПЛАНТАЦИЯ И ПРОТЕЗИРОВАНИЕ</span><h3>Восстановление улыбки без компромиссов</h3><p>Задача: восполнить отсутствующий зуб и вернуть целостность зубного ряда с помощью импланта и коронки.</p><div class="case-meta"><span><svg class="icon"><use href="#clock"/></svg> 4–6 месяцев</span><span>Врач: Александр Волков</span></div><button class="button button-outline" data-book="Результат: имплантация и протезирование">Хочу такой же результат <svg class="icon"><use href="#arrow"/></svg></button></div></article>
+      </div><p class="section-footnote">Каждый случай индивидуален. Возможность лечения, сроки и результат обсуждаются с врачом на консультации.</p>
+    </div></section>
+
+    <section class="doctors-section section" id="doctors" aria-labelledby="doctors-title"><div class="container"><div class="section-heading"><div><p class="eyebrow"><span></span> ЛЮДИ, КОТОРЫЕ ЗАБОТЯТСЯ</p><h2 id="doctors-title">Сильная команда.<br>Бережный подход<span class="accent">.</span></h2></div><p>Внимательно выслушают. Понятно объяснят.<br class="desktop-break"> Помогут принять взвешенное решение.</p></div><p class="demo-note">Демонстрационные профили: имена, стаж и специализации — примеры; фотографии Unsplash не изображают сотрудников клиники.</p><div class="doctor-grid"><article class="doctor-card"><div class="doctor-photo"><img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&amp;fit=crop&amp;w=800&amp;q=85" width="800" height="900" alt="Стоковый портрет для демонстрационной карточки специалиста" loading="lazy"><span class="doctor-experience">Стаж 14 лет</span></div><div class="doctor-info"><h3>Волков Александр Сергеевич</h3><p class="doctor-role">Главный врач · хирург-имплантолог</p><p class="doctor-description">Планирование имплантации, костная пластика и комплексное восстановление зубов. Объясняет каждый этап простыми словами.</p><button class="button button-outline" data-book="Запись к врачу: Александр Волков">Записаться к врачу <svg class="icon"><use href="#arrow"/></svg></button></div></article>
+<article class="doctor-card"><div class="doctor-photo"><img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&amp;fit=crop&amp;w=800&amp;q=85" width="800" height="900" alt="Стоковый портрет для демонстрационной карточки специалиста" loading="lazy"><span class="doctor-experience">Стаж 11 лет</span></div><div class="doctor-info"><h3>Морозова Елена Андреевна</h3><p class="doctor-role">Стоматолог-терапевт · микроскопист</p><p class="doctor-description">Лечение каналов под увеличением и бережная реставрация зубов. Внимание к деталям и спокойствие на каждом приёме.</p><button class="button button-outline" data-book="Запись к врачу: Елена Морозова">Записаться к врачу <svg class="icon"><use href="#arrow"/></svg></button></div></article>
+<article class="doctor-card"><div class="doctor-photo"><img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&amp;fit=crop&amp;w=800&amp;q=85" width="800" height="900" alt="Стоковый портрет для демонстрационной карточки специалиста" loading="lazy"><span class="doctor-experience">Стаж 12 лет</span></div><div class="doctor-info"><h3>Соколов Дмитрий Олегович</h3><p class="doctor-role">Стоматолог-ортопед</p><p class="doctor-description">Керамические виниры, коронки и протезирование на имплантах. Индивидуальный подход к форме и эстетике улыбки.</p><button class="button button-outline" data-book="Запись к врачу: Дмитрий Соколов">Записаться к врачу <svg class="icon"><use href="#arrow"/></svg></button></div></article></div></div></section>
+
+    <section class="reviews-section section" id="reviews" aria-labelledby="reviews-title"><div class="container"><div class="section-heading"><div><p class="eyebrow"><span></span> ДОВЕРИЕ В ДЕТАЛЯХ</p><h2 id="reviews-title">Когда заботу<br>рекомендуют близким<span class="accent">.</span></h2></div><p>О лечении, которое становится<br class="desktop-break"> спокойным и понятным опытом.</p></div><p class="demo-note">Рейтинги — из демонстрационного задания, отзывы ниже — примеры текстов. Они не являются подтверждёнными отзывами пациентов.</p>
+      <div class="ratings-grid"><div class="platform-rating"><span class="platform-icon yandex-icon">Я</span><div><h3>Яндекс.Карты</h3><p><strong>5.0</strong> <span class="stars" aria-label="5 из 5">★★★★★</span><span>420+ отзывов</span></p></div></div><div class="platform-rating"><span class="platform-icon pro-icon">ПД</span><div><h3>ПроДокторов</h3><p><strong>4.9</strong> <span class="stars" aria-label="4,9 из 5">★★★★★</span><span>310+ отзывов</span></p></div></div><div class="platform-rating"><span class="platform-icon gis-icon">2</span><div><h3>2ГИС</h3><p><strong>5.0</strong> <span class="stars" aria-label="5 из 5">★★★★★</span><span>280+ отзывов</span></p></div></div></div>
+      <div class="review-grid"><article class="review-card"><div class="review-author"><span class="review-avatar">АК</span><div><h3>Анна К.</h3><span>Лечение кариеса · пример отзыва</span></div><span class="review-quote" aria-hidden="true">“</span></div><span class="stars" aria-label="5 из 5">★★★★★</span><blockquote>Долго откладывала визит из-за страха. На консультации врач показала снимок и спокойно объяснила, что нужно сделать. До лечения согласовали стоимость, и никаких неожиданных пунктов в конце не появилось. Особенно понравилось, что можно было сделать паузу и задать вопросы.</blockquote><time datetime="2026-10-12">12 октября 2026</time></article><article class="review-card"><div class="review-author"><span class="review-avatar">МС</span><div><h3>Михаил С.</h3><span>Имплантация · пример отзыва</span></div><span class="review-quote" aria-hidden="true">“</span></div><span class="stars" aria-label="5 из 5">★★★★★</span><blockquote>Пришёл с множеством вопросов про восстановление зуба. Получил понятный план с этапами и стоимостью. Администратор заранее напоминал о визитах, врач подробно рассказывал, что будет дальше. Для меня главное — ощущение, что со мной разговаривают и ничего не навязывают.</blockquote><time datetime="2026-09-28">28 сентября 2026</time></article><article class="review-card"><div class="review-author"><span class="review-avatar">ЕП</span><div><h3>Екатерина П.</h3><span>Профгигиена · пример отзыва</span></div><span class="review-quote" aria-hidden="true">“</span></div><span class="stars" aria-label="5 из 5">★★★★★</span><blockquote>Была на профессиональной гигиене. Понравились аккуратность врача и внимание к моим ощущениям. После процедуры разобрали домашний уход: как пользоваться нитью и что подходит именно мне. Светлая клиника, приём начался вовремя, общение очень доброжелательное.</blockquote><time datetime="2026-09-05">5 сентября 2026</time></article></div>
+    </div></section>
+
+    <section class="faq-section section" id="faq" aria-labelledby="faq-title"><div class="container faq-layout"><div class="faq-intro"><p class="eyebrow"><span></span> СПОКОЙНЕЕ, КОГДА ВСЁ ПОНЯТНО</p><h2 id="faq-title">Хорошие вопросы.<br>Честные ответы<span class="accent">.</span></h2><p>Не нашли свой вопрос?<br>Мы с удовольствием ответим лично.</p><button class="button button-outline" data-book="Вопрос администратору">Задать вопрос <svg class="icon"><use href="#arrow"/></svg></button></div><div class="faq-list"><article class="faq-item"><h3><button class="faq-trigger" type="button" id="faq-trigger-0" aria-expanded="false" aria-controls="faq-answer-0"><span>Насколько болезненно лечение и имплантация?</span><span class="faq-plus" aria-hidden="true">+</span></button></h3><div class="faq-answer" id="faq-answer-0" role="region" aria-labelledby="faq-trigger-0" inert><div><p>Перед процедурой врач обсудит с вами обезболивание, ваши ощущения и особенности здоровья. Способ анестезии подбирается индивидуально. Во время приёма можно попросить паузу — важно, чтобы вы чувствовали себя спокойно.</p></div></div></article>
+<article class="faq-item"><h3><button class="faq-trigger" type="button" id="faq-trigger-1" aria-expanded="false" aria-controls="faq-answer-1"><span>Как оформляется рассрочка 0%?</span><span class="faq-plus" aria-hidden="true">+</span></button></h3><div class="faq-answer" id="faq-answer-1" role="region" aria-labelledby="faq-trigger-1" inert><div><p>Попросите администратора рассказать о доступных программах. Срок, сумма, участие банка и требования к оформлению зависят от действующих условий. Все платежи и итоговая стоимость согласуются до подписания договора. Условия программы в демонстрационной версии требуют подтверждения клиникой.</p></div></div></article>
+<article class="faq-item"><h3><button class="faq-trigger" type="button" id="faq-trigger-2" aria-expanded="false" aria-controls="faq-answer-2"><span>Можно ли получить документы для налогового вычета?</span><span class="faq-plus" aria-hidden="true">+</span></button></h3><div class="faq-answer" id="faq-answer-2" role="region" aria-labelledby="faq-trigger-2" inert><div><p>Администратор поможет уточнить, какие документы клиника может подготовить для оформления вычета. Возможность получения и размер вычета зависят от вашей ситуации и действующих правил. Уточните список документов при записи.</p></div></div></article>
+<article class="faq-item"><h3><button class="faq-trigger" type="button" id="faq-trigger-3" aria-expanded="false" aria-controls="faq-answer-3"><span>Какие гарантии вы даете?</span><span class="faq-plus" aria-hidden="true">+</span></button></h3><div class="faq-answer" id="faq-answer-3" role="region" aria-labelledby="faq-trigger-3" inert><div><p>Условия гарантии зависят от вида лечения и фиксируются в договоре. Врач объяснит, на что распространяется гарантия и какие рекомендации важно соблюдать. Ознакомиться с условиями можно до начала процедур.</p></div></div></article>
+<article class="faq-item"><h3><button class="faq-trigger" type="button" id="faq-trigger-4" aria-expanded="false" aria-controls="faq-answer-4"><span>Я не знаю, к какому врачу записаться. Как быть?</span><span class="faq-plus" aria-hidden="true">+</span></button></h3><div class="faq-answer" id="faq-answer-4" role="region" aria-labelledby="faq-trigger-4" inert><div><p>Оставьте заявку на первичный осмотр или позвоните администратору. Расскажите в общих словах, что вас беспокоит: поможем выбрать направление и удобное время. План лечения составляется после консультации.</p></div></div></article></div></div></section>
+
+    <section class="contacts section" id="contacts" aria-labelledby="contacts-title"><div class="container contacts-grid"><div><p class="eyebrow"><span></span> БУДЕМ РАДЫ ВСТРЕЧЕ</p><h2 id="contacts-title">Ваша новая улыбка<br>ближе, чем кажется<span class="accent">.</span></h2><p>Подберём удобное время и ответим на вопросы.</p><button class="button button-primary" data-book="Первичный осмотр">Записаться на осмотр <svg class="icon"><use href="#arrow"/></svg></button></div><address class="contact-card"><div><svg class="icon"><use href="#pin"/></svg><span><small>ПРИХОДИТЕ</small>г. Москва, ул. Ленина, 15</span></div><div><svg class="icon"><use href="#clock"/></svg><span><small>МЫ РЯДОМ КАЖДЫЙ ДЕНЬ</small>09:00–21:00</span></div><div><svg class="icon"><use href="#icon-phone"/></svg><span><small>ПОЗВОНИТЕ НАМ</small><a href="tel:+79991234567">+7 (999) 123-45-67</a></span></div></address></div>
+      <div class="container"><div class="clinic-map"><svg class="map-art" viewBox="0 0 1200 400" role="img" aria-label="Схематичная карта проезда, расположение клиники условное" preserveAspectRatio="xMidYMid slice"><defs><pattern id="map-blocks" width="145" height="110" patternUnits="userSpaceOnUse" patternTransform="rotate(-16)"><rect width="145" height="110" fill="#edf2ec"/><rect x="12" y="12" width="115" height="80" rx="12" fill="#e1e9e1"/><path d="M0 0h145v110" fill="none" stroke="#fff" stroke-width="16"/></pattern></defs><rect width="1200" height="400" fill="url(#map-blocks)"/><path d="M820-30C720 100 1000 180 830 450" fill="none" stroke="#bcdedc" stroke-width="85"/><path d="m-30 320 1260-200" stroke="#fff" stroke-width="38"/><path d="m470-30 130 480" stroke="#fff" stroke-width="32"/><path d="m-30 320 1260-200" stroke="#f1e3c5" stroke-width="18"/><path d="m470-30 130 480" stroke="#f1e3c5" stroke-width="14"/><text x="165" y="270" fill="#7b8d85" font-size="15" font-family="Inter, sans-serif" transform="rotate(-9 165 270)">ул. Ленина</text><circle cx="555" cy="213" r="55" fill="#0d948812"/><circle cx="555" cy="213" r="36" fill="#0d94881a"/><path d="M555 173c-17 0-30 13-30 30 0 22 30 45 30 45s30-23 30-45c0-17-13-30-30-30Z" fill="#0d9488" stroke="#fff" stroke-width="4"/><circle cx="555" cy="202" r="9" fill="#fff"/><rect x="601" y="177" width="148" height="55" rx="12" fill="white"/><text x="622" y="201" fill="#0f172a" font-size="16" font-weight="700" font-family="Inter, sans-serif">ДентаПро</text><text x="622" y="219" fill="#64756e" font-size="10" font-family="Inter, sans-serif">ул. Ленина, 15</text></svg><div class="map-caption"><div><span class="eyebrow">ЖДЁМ ВАС В ГОСТИ</span><h3>Москва, ул. Ленина, 15</h3><p>Схема условная. Адрес — из демонстрационного задания.</p></div><a class="button button-primary" href="https://yandex.ru/maps/?mode=routes&amp;rtext=~Москва%2C%20улица%20Ленина%2C%2015&amp;rtt=auto" target="_blank" rel="noopener noreferrer">Построить маршрут <svg class="icon"><use href="#arrow"/></svg></a></div></div></div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container"><div class="footer-top"><a class="brand" href="#"><span class="brand-mark"><svg><use href="#tooth"/></svg></span><span>Дента<span class="brand-accent">Про</span></span></a><p>Современная стоматология.<br>Человеческое отношение.</p><button class="text-button" data-privacy>Политика конфиденциальности</button></div><div class="footer-bottom"><span>© <span id="year">2026</span> ДентаПро</span><span>Демонстрационная версия · данные клиники требуют подтверждения</span></div><p class="medical-note">Имеются противопоказания. Необходима консультация специалиста.</p></div></footer>
+
+  <dialog class="booking-modal" id="booking-modal" aria-labelledby="modal-title">
+    <button class="icon-button modal-close" data-close-booking aria-label="Закрыть окно"><svg class="icon"><use href="#close"/></svg></button>
+    <div id="booking-content"><span class="modal-symbol"><svg class="icon"><use href="#tooth"/></svg></span><p class="eyebrow">ПОЗАБОТИМСЯ О ВАШЕЙ УЛЫБКЕ</p><h2 id="modal-title">Запись на прием</h2><p class="modal-description">Оставьте контакты. Мы перезвоним в часы работы и подберём удобное время.</p>
+      <form id="booking-form" novalidate>
+        <label for="service">Выбранная услуга</label><input id="service" name="service" readonly maxlength="160" value="Первичный осмотр">
+        <label for="name">Ваше имя</label><input id="name" name="name" placeholder="Как к вам обращаться?" autocomplete="given-name" minlength="2" maxlength="70" required aria-describedby="name-error"><span class="field-error" id="name-error"></span>
+        <label for="phone">Телефон</label><input id="phone" name="phone" type="tel" inputmode="tel" placeholder="+7 (___) ___-__-__" autocomplete="tel" maxlength="18" required aria-describedby="phone-error"><span class="field-error" id="phone-error"></span>
+        <div class="honeypot" aria-hidden="true"><label for="website">Ваш сайт</label><input id="website" name="website" tabindex="-1" autocomplete="off"></div>
+        <label class="consent"><input type="checkbox" id="consent" name="consent" required><span>Я согласен на обработку персональных данных в соответствии с <button type="button" class="inline-link" data-privacy>политикой конфиденциальности</button>.</span></label>
+        <p class="form-error" id="form-error" role="alert"></p>
+        <button type="submit" class="button button-primary submit-button">Подтвердить запись <svg class="icon"><use href="#arrow"/></svg></button>
+        <p class="form-note"><svg class="icon"><use href="#shield"/></svg> Ваши контакты — только для связи по заявке</p>
+      </form>
+    </div>
+    <div id="booking-success" class="success-screen" hidden tabindex="-1"><span class="success-icon"><svg class="icon"><use href="#check"/></svg></span><p class="eyebrow">ПЕРВЫЙ ШАГ СДЕЛАН</p><h2 id="success-title">Спасибо за доверие!</h2><p>Ваша заявка отправлена. Администратор свяжется с вами в часы работы клиники, чтобы согласовать время.</p><span class="success-hours">Ежедневно 09:00–21:00</span><button class="button button-primary" data-close-booking>Отлично, буду ждать</button></div>
+  </dialog>
+
+  <dialog id="privacy-modal" class="privacy-modal" aria-labelledby="privacy-title"><button class="icon-button modal-close" data-close-privacy aria-label="Закрыть политику"><svg class="icon"><use href="#close"/></svg></button><p class="eyebrow">ПЕРСОНАЛЬНЫЕ ДАННЫЕ</p><h2 id="privacy-title">Политика конфиденциальности</h2><p>Это демонстрационный проект сайта «ДентаПро». До начала приёма реальных заявок владелец сайта должен указать полное наименование и контакты оператора, основания обработки, сроки хранения и порядок отзыва согласия.</p><h3>Какие данные передаются</h3><p>Формы передают имя, телефон, выбранную услугу и отметку согласия серверу сайта, затем — в Telegram для связи по заявке. Квиз дополнительно передаёт выбранную задачу, наличие дискомфорта и предпочтение по оплате. Ответ о дискомфорте может содержать сведения о здоровье. Не указывайте дополнительные медицинские данные.</p><h3>Цель обработки</h3><p>Обратный звонок и согласование записи. Сайт не сохраняет заявки в браузере и не использует рекламные трекеры. Шрифты загружаются с Google Fonts, фотография — с Unsplash; при загрузке браузер обращается к этим сервисам.</p><h3>Технические cookie</h3><p>После нажатия «Понятно» в уведомлении сайт сохраняет технический cookie dentapro_notice_seen на 180 дней, чтобы не показывать сообщение повторно. Он содержит только отметку о закрытии уведомления. Вы можете удалить его в настройках браузера. Яндекс.Метрика и рекламная аналитика не подключены.</p><h3>Ваши обращения</h3><p>Для уточнения и удаления переданных данных свяжитесь с клиникой по телефону, указанному на сайте. До запуска этот номер и сведения об операторе необходимо заменить на подтверждённые.</p><button class="button button-soft" data-close-privacy>Понятно</button></dialog>
+  <aside class="cookie-notice" id="cookie-notice" aria-label="Уведомление о cookie" hidden>
+    <span class="cookie-notice-icon" aria-hidden="true"><svg class="icon"><use href="#shield"/></svg></span>
+    <p>Используем технические cookie, чтобы запомнить ваш выбор и сделать посещение сайта удобнее. Подробнее о работе с данными — в <button type="button" class="inline-link" data-privacy>политике конфиденциальности</button>.</p>
+    <button type="button" class="button button-primary" id="cookie-notice-dismiss">Понятно</button>
+  </aside>
+</body>
+</html>
