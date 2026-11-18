@@ -1,0 +1,122 @@
+/* Default dark palette. Layout and responsive rules remain in style.css. */
+:root {
+  color-scheme: dark;
+  --bg-main: #171b1b;
+  --bg-secondary: #131818;
+  --surface: #202626;
+  --surface-hover: #273333;
+  --accent: #64e7d9;
+  --accent-hover: #96f3e8;
+  --button-fill: #087f78;
+  --text-primary: #e6e8e5;
+  --text-secondary: #b7c1bc;
+  --muted: #99aaa3;
+  --border: #35413e;
+  --shadow: 0 12px 35px -12px rgb(0 0 0 / 35%);
+}
+
+::selection { background: #26675f; color: #fff; }
+.header { background: #171b1bf2; }
+.header-nav { border-top-color: var(--border); }
+.hero { background: radial-gradient(ellipse at 0% 0%, #103a2e85, transparent 65%); }
+.hero-badge { color: var(--text-secondary); }
+.badge-divider { background: var(--border); }
+h1 > span::after { border-top-color: #48a99b; }
+.hero-visual { background: var(--surface); }
+
+.brand-mark, .button-primary { background: var(--button-fill); }
+.button-primary { color: #fff; box-shadow: 0 6px 20px -8px #0005; }
+.button-primary:hover { background: #0a9589; }
+.button-outline, .button-soft, .button-white {
+  background: transparent;
+  border-color: var(--border);
+  color: var(--text-primary);
+}
+.button-outline { color: var(--accent); }
+.button-outline:hover, .button-soft:hover, .button-white:hover {
+  background: var(--surface-hover);
+  border-color: #53766c;
+}
+.benefits { border-top-color: var(--border); }
+.benefit, .service-row, .quiz-card, .case-card, .doctor-card,
+.platform-rating, .review-card, .contact-card, .clinic-map {
+  background: var(--surface);
+  border-color: var(--border);
+}
+.benefit { background: var(--bg-main); }
+.care-strip, .estimate { background: var(--bg-main); }
+.image-label, .rating-card, .doctor-experience, .comparison-label {
+  background: #1c2323f5;
+  border-color: var(--border);
+}
+.image-label { color: var(--text-primary); }
+.rating-card { box-shadow: 0 14px 40px -12px #0007; }
+.avatar-stack span { background: #30483e; color: #b8ddd1; border-color: #202626; }
+.avatar-stack span + span { background: #4b392b; color: #e1c7a7; }
+.avatar-stack span:last-child { background: #283f49; color: #bdd9e4; }
+.nav-note, .hero-reassurance, .care-strip span, .price-note,
+.service-number, .section-index, .contact-card small, .footer-bottom,
+.medical-note, .form-note, .demo-note, .section-footnote,
+.quiz-progress-label, .quiz-hint, .quiz-clarification, .option-number,
+#quiz-navigation-note, .case-meta, .platform-rating p,
+.review-author div > span, .review-card time { color: var(--muted); }
+.price-note > span { color: var(--text-secondary); }
+.tabs { background: #1a2421; border-color: var(--border); scrollbar-color: #53766c transparent; }
+.tabs button[aria-selected=true] { background: #2a3b35; color: var(--accent); }
+.service-row .button { background: #223a33; border-color: #36554a; color: var(--accent); }
+.service-row .button:hover { background: var(--button-fill); color: #fff; }
+.demo-note { border-left-color: #416357; }
+
+.quiz-gift { background: #19342b; }
+.quiz-option { border-color: var(--border); }
+.quiz-option:hover, .quiz-option:has(input:checked) { background: #243e34; border-color: #5b9f89; }
+.option-marker { background: #18211e; border-color: #5d776b; }
+.quiz-option input:checked ~ .option-marker { border-color: #345d4e; }
+.quiz-progress { background: #34453d; }
+.gift-illustration { background: #1d3f33; border-color: #456d5b; box-shadow: 12px 12px 0 #142b23; }
+.gift-illustration span { background: var(--button-fill); }
+.quiz-gift > p, .gift-note { color: #b0c7ba; }
+.gift-note { border-top-color: #395c4b; }
+.comparison-divider { background: var(--accent); }
+.comparison-divider span { background: var(--surface); border-color: var(--border); }
+.doctor-photo { background: #26332d; }
+.yandex-icon { background: #392722; color: #ff9381; }
+.pro-icon { background: #21333f; color: #89c9f2; }
+.gis-icon { background: #273c28; color: #a1d994; }
+.review-avatar { background: #2c4537; color: #bddbcc; }
+.review-quote { color: #4b7462; }
+.faq-plus, .modal-symbol, .success-icon, .cookie-notice-icon, .coming-label {
+  background: #243e34;
+  color: var(--accent);
+}
+
+dialog { background: var(--surface); border: 1px solid var(--border); box-shadow: 0 30px 90px #0008; }
+dialog::backdrop { background: #050c0bc9; }
+.mobile-menu { background: var(--bg-main); }
+.icon-button, .menu-toggle { background: #2a3731; }
+.icon-button:hover { background: #354a40; }
+form > input, .quiz-fields input {
+  background: #161f1c;
+  border-color: #455b50;
+  color: var(--text-primary);
+}
+form > input[readonly] { background: #263d32; color: #c1dfce; }
+form > input::placeholder, .quiz-fields input::placeholder { color: #97aaa0; }
+form > input[aria-invalid=true], .quiz-fields input[aria-invalid=true] { border-color: #ee9995; }
+.field-error, .form-error { color: #ffada5; }
+.consent input { accent-color: var(--button-fill); }
+.cookie-notice { background: #202626f5; border-color: var(--border); box-shadow: 0 12px 45px -12px #0009; }
+.skip-link { background: var(--surface); }
+
+/* Preserve the original photography; only the schematic map uses a dark palette. */
+.map-art { background: #1d2c25; }
+.map-art #map-blocks > rect:first-child { fill: #25392e; }
+.map-art #map-blocks > rect:nth-child(2) { fill: #304b3b; }
+.map-art #map-blocks > path { stroke: #18231d; }
+.map-art > path[stroke="#fff"] { stroke: #465248; }
+.map-art > path[stroke="#f1e3c5"] { stroke: #6d6b53; }
+.map-art > path[stroke="#bcdedc"] { stroke: #285b58; }
+.map-art > text { fill: #bacabe; }
+.map-art > rect[fill="white"] { fill: #202e26; }
+.map-art > text[fill="#0f172a"] { fill: #e6e8e5; }
+.map-art > text[fill="#64756e"] { fill: #b7c1bc; }

@@ -1,5 +1,17 @@
 'use strict';
 
+// Light is always the initial theme; the visitor can switch without reloading.
+const darkTheme = document.querySelector('#dark-theme');
+const themeToggles = [...document.querySelectorAll('[data-theme-toggle]')];
+let isDarkTheme = false;
+themeToggles.forEach((toggle) => toggle.addEventListener('click', () => {
+  isDarkTheme = !isDarkTheme;
+  darkTheme.media = isDarkTheme ? 'all' : 'not all';
+  document.documentElement.dataset.theme = isDarkTheme ? 'dark' : 'light';
+  document.querySelector('meta[name="theme-color"]').content = isDarkTheme ? '#171b1b' : '#FFFFFF';
+  themeToggles.forEach((button) => button.setAttribute('aria-checked', String(isDarkTheme)));
+}));
+
 // This cookie stores only notice dismissal, never contacts or credentials.
 const cookieNotice = document.querySelector('#cookie-notice');
 const noticeCookieName = 'dentapro_notice_seen';
